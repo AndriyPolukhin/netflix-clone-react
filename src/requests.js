@@ -1,5 +1,6 @@
-const API_KEY = process.env.TMDB_API_KEY;
+import apiKey from './config';
 
+const API_KEY = apiKey.TMDB_API_KEY;
 const requests = {
   fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
   fetchNetflixOriginals: `/discover/tv?api_key=${API_KEY}&with_networks=213`,
